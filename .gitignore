@@ -1,0 +1,65 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Mac / Linux / Windows junk
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage
+
+# Pycharm files
+.idea
+
+# Enviroment
+.env
+
+# Python cache
+__pycache__
+
+# Pyhon venv
+venv
+.venv
+
+# pyenv
+.python-version
+.vscode/
+
+# Test coverage
+.coverage
+htmlcov
+
+# Build files
+dist/
+
+# Postgresql data
+pgdata
+
+scripts

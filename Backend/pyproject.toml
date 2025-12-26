@@ -1,0 +1,101 @@
+[project]
+name = "app"
+version = "0.1.0"
+description = "Servidor Agatha Christie Death on Cards"
+authors = []
+
+#requires-python = "3.13"
+
+dependencies = [
+    "pydantic==2.10.6",
+    "pydantic-settings==2.7.1",
+    "requests==2.32.3",
+    "fastapi==0.115.8",
+    "pyjwt==2.10.1",
+    "starlette~=0.45.3",
+    "uvicorn==0.34.0",
+    "python-multipart==0.0.20",
+    "websockets==15.0.1",
+    "asyncio==3.4.3",
+    "sqlalchemy==2.0.40",
+    "psycopg2-binary==2.9.10",
+    "sqlmodel==0.0.24",
+    "httpx==0.28.1",
+    "pycryptodome>=3.18",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "ruff",
+    "isort",
+]
+test = [
+    "poetry==2.1.1",
+    "pytest",
+    "pytest_asyncio",
+    "pytest-cov",
+    "factory_boy",
+    "pytest_mock",
+]
+
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    ".idea",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "site-packages",
+    "venv",
+    ".xml",
+    ".venv",
+
+]
+
+[tool.poetry]
+name = "servidor-acdoc"
+version = "0.1.0"
+description = "Servidor ACDoC"
+authors = []
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+axolot-server = "app.main:main"
+
+[tool.coverage.run]
+omit = [
+    # omit anything in tests directory
+    "tests/*",
+]
