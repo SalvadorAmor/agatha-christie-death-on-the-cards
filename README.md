@@ -21,4 +21,4 @@ Para ejecutar el sistema, seguir las instrucciones específicas de cada componen
 ## Documentación de Ingeniería del Software
 
 El análisis del sistema (alcance, casos de uso, diagrama de clases y diagramas de flujo de datos)
-fue desarrollado como parte de un take-home académico y se encuentra en el siguiente repositorio:
+fue desarrollado como parte de un take-home académico y se encuentra en este[repositorio](https://github.com/SalvadorAmor/Ingenia-del-Software-FAMAF/tree/main/TakeHome)
